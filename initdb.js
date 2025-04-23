@@ -1,5 +1,5 @@
 const sql = require("better-sqlite3");
-const db = sql("public/meals.db");
+const db = sql("/public/meals.db");
 
 const dummyMeals = [
   {
