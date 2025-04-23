@@ -2,9 +2,8 @@ import sql from "better-sqlite3";
 import slugify from "slugify";
 import xss from "xss";
 import fs from "node:fs";
-import { error } from "node:console";
 
-const db = sql("/public/meals.db");
+const db = sql("meals.db");
 
 export async function getMeals() {
   await new Promise((resolve) => setTimeout(resolve, 2000));
